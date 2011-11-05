@@ -16,7 +16,7 @@
 
 package com.nereuschen.eda.channel;
 
-import com.nereuschen.eda.Message;
+import com.nereuschen.eda.message.Message;
 
 /**
  * Base channel interface defining common behavior for sending messages.

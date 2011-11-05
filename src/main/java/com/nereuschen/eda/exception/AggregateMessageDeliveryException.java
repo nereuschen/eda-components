@@ -20,7 +20,7 @@ package com.nereuschen.eda.exception;
 import java.util.Collections;
 import java.util.List;
 
-import com.nereuschen.eda.Message;
+import com.nereuschen.eda.message.Message;
 import com.nereuschen.eda.util.StringUtils;
 
 /**

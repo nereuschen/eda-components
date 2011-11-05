@@ -30,8 +30,9 @@ import java.util.concurrent.atomic.AtomicBoolean;
 
 import org.junit.Test;
 
-import com.nereuschen.eda.Message;
-import com.nereuschen.eda.message.GenericMessage;
+import com.nereuschen.eda.channel.impl.QueueChannel;
+import com.nereuschen.eda.message.Message;
+import com.nereuschen.eda.message.impl.GenericMessage;
 import com.nereuschen.eda.selector.UnexpiredMessageSelector;
 import com.nereuschen.eda.support.MessageBuilder;
 

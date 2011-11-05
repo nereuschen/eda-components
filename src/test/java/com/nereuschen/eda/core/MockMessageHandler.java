@@ -3,8 +3,8 @@ package com.nereuschen.eda.core;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
-import com.nereuschen.eda.Message;
 import com.nereuschen.eda.exception.MessagingException;
+import com.nereuschen.eda.message.Message;
 
 /*
  * @author Nereus Chen (nereus.chen@gmail.com)

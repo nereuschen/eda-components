@@ -31,13 +31,14 @@ import java.util.concurrent.TimeoutException;
 
 import org.junit.Test;
 
-import com.nereuschen.eda.Message;
-import com.nereuschen.eda.channel.DirectChannel;
 import com.nereuschen.eda.channel.MessageChannel;
-import com.nereuschen.eda.channel.QueueChannel;
+import com.nereuschen.eda.channel.impl.DirectChannel;
+import com.nereuschen.eda.channel.impl.QueueChannel;
+import com.nereuschen.eda.core.impl.AbstractReplyProducingMessageHandler;
+import com.nereuschen.eda.core.impl.AsyncMessagingTemplate;
 import com.nereuschen.eda.exception.MessagingException;
-import com.nereuschen.eda.handler.AbstractReplyProducingMessageHandler;
-import com.nereuschen.eda.message.GenericMessage;
+import com.nereuschen.eda.message.Message;
+import com.nereuschen.eda.message.impl.GenericMessage;
 import com.nereuschen.eda.support.MessageBuilder;
 import com.nereuschen.eda.util.Assert;
 

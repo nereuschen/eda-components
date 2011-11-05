@@ -19,8 +19,8 @@ package com.nereuschen.eda.selector;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
-import com.nereuschen.eda.Message;
 import com.nereuschen.eda.core.MessageSelector;
+import com.nereuschen.eda.message.Message;
 import com.nereuschen.eda.util.Assert;
 
  

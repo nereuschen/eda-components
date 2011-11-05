@@ -16,8 +16,8 @@
 
 package com.nereuschen.eda.selector;
 
-import com.nereuschen.eda.Message;
 import com.nereuschen.eda.core.MessageSelector;
+import com.nereuschen.eda.message.Message;
 
 /**
  * A {@link MessageSelector} that accepts {@link Message Messages} that are

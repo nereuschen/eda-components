@@ -16,8 +16,8 @@
 
 package com.nereuschen.eda.core;
 
-import com.nereuschen.eda.Message;
 import com.nereuschen.eda.exception.MessagingException;
+import com.nereuschen.eda.message.Message;
 
  
 /**

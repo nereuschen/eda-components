@@ -1224,13 +1224,13 @@ public abstract class StringUtils {
 	 *            the String to end each element with
 	 * @return the delimited String
 	 */
-	public static String collectionToDelimitedString(Collection coll,
+	public static String collectionToDelimitedString(Collection<String> coll,
 			String delim, String prefix, String suffix) {
 		if (CollectionUtils.isEmpty(coll)) {
 			return "";
 		}
 		StringBuilder sb = new StringBuilder();
-		Iterator it = coll.iterator();
+		Iterator<String> it = coll.iterator();
 		while (it.hasNext()) {
 			sb.append(prefix).append(it.next()).append(suffix);
 			if (it.hasNext()) {
@@ -1250,7 +1250,7 @@ public abstract class StringUtils {
 	 *            the delimiter to use (probably a ",")
 	 * @return the delimited String
 	 */
-	public static String collectionToDelimitedString(Collection coll,
+	public static String collectionToDelimitedString(Collection<String> coll,
 			String delim) {
 		return collectionToDelimitedString(coll, delim, "", "");
 	}
@@ -1263,7 +1263,7 @@ public abstract class StringUtils {
 	 *            the Collection to display
 	 * @return the delimited String
 	 */
-	public static String collectionToCommaDelimitedString(Collection coll) {
+	public static String collectionToCommaDelimitedString(Collection<String> coll) {
 		return collectionToDelimitedString(coll, ",");
 	}
 

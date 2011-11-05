@@ -16,7 +16,8 @@
 
 package com.nereuschen.eda.core;
 
-import com.nereuschen.eda.Message;
+import com.nereuschen.eda.core.impl.MessagingTemplate;
+import com.nereuschen.eda.message.Message;
 
 /**
  * To be used with MessagingTemplate's send method that converts an object to a message.

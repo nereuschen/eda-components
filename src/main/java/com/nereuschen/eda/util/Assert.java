@@ -385,7 +385,7 @@ public abstract class Assert {
 	 * @throws IllegalArgumentException
 	 *             if the collection is <code>null</code> or has no elements
 	 */
-	public static void notEmpty(Collection collection, String message) {
+	public static void notEmpty(Collection<?> collection, String message) {
 		if (CollectionUtils.isEmpty(collection)) {
 			throw new IllegalArgumentException(message);
 		}
@@ -404,7 +404,7 @@ public abstract class Assert {
 	 * @throws IllegalArgumentException
 	 *             if the collection is <code>null</code> or has no elements
 	 */
-	public static void notEmpty(Collection collection) {
+	public static void notEmpty(Collection<?> collection) {
 		notEmpty(
 				collection,
 				"[Assertion failed] - this collection must not be empty: it must contain at least 1 element");
@@ -425,7 +425,7 @@ public abstract class Assert {
 	 * @throws IllegalArgumentException
 	 *             if the map is <code>null</code> or has no entries
 	 */
-	public static void notEmpty(Map map, String message) {
+	public static void notEmpty(Map<?, ?> map, String message) {
 		if (CollectionUtils.isEmpty(map)) {
 			throw new IllegalArgumentException(message);
 		}
@@ -444,7 +444,7 @@ public abstract class Assert {
 	 * @throws IllegalArgumentException
 	 *             if the map is <code>null</code> or has no entries
 	 */
-	public static void notEmpty(Map map) {
+	public static void notEmpty(Map<?, ?> map) {
 		notEmpty(
 				map,
 				"[Assertion failed] - this map must not be empty; it must contain at least one entry");
@@ -465,7 +465,7 @@ public abstract class Assert {
 	 *             if the object is not an instance of clazz
 	 * @see Class#isInstance
 	 */
-	public static void isInstanceOf(Class clazz, Object obj) {
+	public static void isInstanceOf(Class<?> clazz, Object obj) {
 		isInstanceOf(clazz, obj, "");
 	}
 
@@ -489,7 +489,7 @@ public abstract class Assert {
 	 *             if the object is not an instance of clazz
 	 * @see Class#isInstance
 	 */
-	public static void isInstanceOf(Class type, Object obj, String message) {
+	public static void isInstanceOf(Class<?> type, Object obj, String message) {
 		notNull(type, "Type to check against must not be null");
 		if (!type.isInstance(obj)) {
 			throw new IllegalArgumentException(message + "Object of class ["
@@ -513,7 +513,7 @@ public abstract class Assert {
 	 * @throws IllegalArgumentException
 	 *             if the classes are not assignable
 	 */
-	public static void isAssignable(Class superType, Class subType) {
+	public static void isAssignable(Class<?> superType, Class<?> subType) {
 		isAssignable(superType, subType, "");
 	}
 
@@ -537,7 +537,7 @@ public abstract class Assert {
 	 * @throws IllegalArgumentException
 	 *             if the classes are not assignable
 	 */
-	public static void isAssignable(Class superType, Class subType,
+	public static void isAssignable(Class<?> superType, Class<?> subType,
 			String message) {
 		notNull(superType, "Type to check against must not be null");
 		if (subType == null || !superType.isAssignableFrom(subType)) {

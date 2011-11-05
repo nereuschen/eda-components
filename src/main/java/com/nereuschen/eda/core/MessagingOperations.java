@@ -16,9 +16,11 @@
 
 package com.nereuschen.eda.core;
 
-import com.nereuschen.eda.Message;
 import com.nereuschen.eda.channel.MessageChannel;
+import com.nereuschen.eda.channel.PollableChannel;
+import com.nereuschen.eda.core.impl.MessagingTemplate;
 import com.nereuschen.eda.exception.MessagingException;
+import com.nereuschen.eda.message.Message;
 
 /**
  * Specifies a basic set of messaging operations.

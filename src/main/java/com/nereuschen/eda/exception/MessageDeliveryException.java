@@ -16,7 +16,7 @@
 
 package com.nereuschen.eda.exception;
 
-import com.nereuschen.eda.Message;
+import com.nereuschen.eda.message.Message;
 
 /**
  * Exception that indicates an error occurred during message delivery.

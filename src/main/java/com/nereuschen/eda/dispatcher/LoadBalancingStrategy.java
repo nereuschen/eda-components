@@ -18,8 +18,8 @@ package com.nereuschen.eda.dispatcher;
 import java.util.Iterator;
 import java.util.List;
 
-import com.nereuschen.eda.Message;
 import com.nereuschen.eda.core.MessageHandler;
+import com.nereuschen.eda.message.Message;
  
 /**
  * Strategy for determining the iteration order of a MessageHandler list.

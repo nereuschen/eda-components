@@ -26,11 +26,11 @@ import java.util.Map;
 import java.util.Set;
 import java.util.UUID;
 
-import com.nereuschen.eda.Message;
-import com.nereuschen.eda.MessageHeaders;
 import com.nereuschen.eda.channel.MessageChannel;
-import com.nereuschen.eda.message.ErrorMessage;
-import com.nereuschen.eda.message.GenericMessage;
+import com.nereuschen.eda.message.Message;
+import com.nereuschen.eda.message.MessageHeaders;
+import com.nereuschen.eda.message.impl.ErrorMessage;
+import com.nereuschen.eda.message.impl.GenericMessage;
 import com.nereuschen.eda.util.Assert;
 import com.nereuschen.eda.util.PatternMatchUtils;
 import com.nereuschen.eda.util.StringUtils;

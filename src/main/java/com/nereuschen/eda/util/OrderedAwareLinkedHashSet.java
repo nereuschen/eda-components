@@ -134,7 +134,7 @@ class OrderedAwareLinkedHashSet<E> extends LinkedHashSet<E> {
 	public String toString() {
 		readLock.lock();
 		try {
-			return StringUtils.collectionToCommaDelimitedString(this);
+			return StringUtils.collectionToCommaDelimitedString((Collection<String>) this);
 		} finally {
 			readLock.unlock();
 		}

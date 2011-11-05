@@ -28,17 +28,23 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 
 import org.junit.Test;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
-import com.nereuschen.eda.Message;
+import com.nereuschen.eda.channel.impl.ExecutorChannel;
 import com.nereuschen.eda.core.MessageHandler;
-import com.nereuschen.eda.dispatcher.RoundRobinLoadBalancingStrategy;
-import com.nereuschen.eda.message.GenericMessage;
+import com.nereuschen.eda.dispatcher.impl.RoundRobinLoadBalancingStrategy;
+import com.nereuschen.eda.message.Message;
+import com.nereuschen.eda.message.impl.GenericMessage;
 
 /**
  * @author Mark Fisher
  * @author Nereus Chen (nereus.chen@gmail.com)
  */
 public class ExecutorChannelTests {
+	@SuppressWarnings("unused")
+    private static Logger LOG = LoggerFactory
+			.getLogger(ExecutorChannelTests.class);
 
 	@Test
 	public void verifyDifferentThread() throws Exception {

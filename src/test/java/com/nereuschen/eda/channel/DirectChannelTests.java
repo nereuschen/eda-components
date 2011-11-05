@@ -23,9 +23,10 @@ import java.util.concurrent.TimeUnit;
 
 import org.junit.Test;
 
-import com.nereuschen.eda.Message;
+import com.nereuschen.eda.channel.impl.DirectChannel;
 import com.nereuschen.eda.core.MockMessageHandler;
-import com.nereuschen.eda.message.GenericMessage;
+import com.nereuschen.eda.message.Message;
+import com.nereuschen.eda.message.impl.GenericMessage;
 
 /**
  * @author Mark Fisher

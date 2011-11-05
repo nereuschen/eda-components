@@ -16,7 +16,7 @@
 
 package com.nereuschen.eda.support.converter;
 
-import com.nereuschen.eda.Message;
+import com.nereuschen.eda.message.Message;
 
 /**
  * @author Mark Fisher

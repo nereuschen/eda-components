@@ -16,7 +16,7 @@
 
 package com.nereuschen.eda.exception;
 
-import com.nereuschen.eda.Message;
+import com.nereuschen.eda.message.Message;
 
 /**
  * The base exception for any failures related to messaging.

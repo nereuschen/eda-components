@@ -18,8 +18,9 @@ package com.nereuschen.eda.core;
 
 import java.util.concurrent.Future;
 
-import com.nereuschen.eda.Message;
 import com.nereuschen.eda.channel.MessageChannel;
+import com.nereuschen.eda.channel.PollableChannel;
+import com.nereuschen.eda.message.Message;
 
 /**
  * @author Mark Fisher

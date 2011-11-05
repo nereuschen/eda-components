@@ -16,7 +16,7 @@
 
 package com.nereuschen.eda.core;
 
-import com.nereuschen.eda.Message;
+import com.nereuschen.eda.message.Message;
 
 /**
  * Strategy interface for message selection.

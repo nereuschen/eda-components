@@ -16,8 +16,8 @@
 
 package com.nereuschen.eda.dispatcher;
 
-import com.nereuschen.eda.Message;
 import com.nereuschen.eda.core.MessageHandler;
+import com.nereuschen.eda.message.Message;
 
  
 /**
